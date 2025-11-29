@@ -3,9 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Technical-Solution/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Tchnical Solution</h1>
+    <nav>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Skills">About</a></li>
+            <li><a href="#Projects">Contact</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="projects-section" id="Services">
+            <h2 class="section-title">Services</h2>
+            <h1 class="section-subtitle">Air Conditioning Services</h1>
+            <div class="section-desc">When it comes to keeping your indoor environment comfortable and cool, our air conditioning services are second to none. Whether you're in need of installation, maintenance, repair, or replacement, our team of skilled technicians is here to ensure your system operates at peak efficiency year-round. From residential homes to commercial buildings, we tailor our services to meet your specific needs, providing timely and reliable solutions that prioritize your comfort and satisfaction. With a commitment to quality workmanship and exceptional customer service, you can trust us to deliver superior results and keep your space cool and inviting, no matter the season. Contact us today to schedule an appointment and experience the difference our air conditioning services can make for you.</div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/airduct_installation.jpg" alt="Air Duct Installation">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>I have designed and developed tHe e-commerce dashboard using HTML, CSS. The structure is built with HTML, styled with CSS for a visually appealing layout.</p>
+                        <div class="project-tags">
+                            <span>Html</span>
+                            <span>CSS</span>
+                            <span>SCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="dashboard.html" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/air_duct.jpg" alt="Air Duct Fabrication">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A weather application that provides real-time weather updates using the OpenWeatherMap API with a clean, intuitive interface.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+    
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/hvac_airduct.jpg" alt="HVAC Air Duct">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A weather application that provides real-time weather updates using the OpenWeatherMap API with a clean, intuitive interface.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="projects-section" id="Services">
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/central_air_conditioning.jpg" alt="Central Air Conditioning">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>I have designed and developed tHe e-commerce dashboard using HTML, CSS. The structure is built with HTML, styled with CSS for a visually appealing layout.</p>
+                        <div class="project-tags">
+                            <span>Html</span>
+                            <span>CSS</span>
+                            <span>SCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="dashboard.html" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/hvac_packaging_unit.jpg" alt="HVAC Packaging Unit">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A weather application that provides real-time weather updates using the OpenWeatherMap API with a clean, intuitive interface.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+    
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/central_heating_system.jpg" alt="Central Heating System">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A weather application that provides real-time weather updates using the OpenWeatherMap API with a clean, intuitive interface.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="projects-section" id="Services">
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/evaporative_central_cooling_system.jpg" alt="Evaporative Central Cooling System">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>I have designed and developed tHe e-commerce dashboard using HTML, CSS. The structure is built with HTML, styled with CSS for a visually appealing layout.</p>
+                        <div class="project-tags">
+                            <span>Html</span>
+                            <span>CSS</span>
+                            <span>SCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="dashboard.html" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="scss/images/hvac_grilles_and_diffusers.jpg" alt="HVAC Grilles and Diffusers">
+                    </div>
+                    <!-- <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A weather application that provides real-time weather updates using the OpenWeatherMap API with a clean, intuitive interface.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Technical-Solution/script.js"></script>
 </body>
 </html>

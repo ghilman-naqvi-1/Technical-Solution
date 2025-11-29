@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+body nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav .name {
+  color: white;
+  font-size: 32px;
+}
+body nav input[type=checkbox] {
+  display: none;
+}
+body nav .menu-btn i {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+body nav ul {
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 20px;
+  background-color: #444141;
+  border: 1px solid #9a9494;
+  display: flex;
+  align-items: center;
+}
+body nav ul li {
+  list-style: none;
+}
+body nav ul li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+body nav ul li a:hover {
+  color: #fbbf24;
+}
+body .container {
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-top: 80px; /* Add padding for fixed nav */
+}
+body .section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  color: white;
+}
+body .section-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
+  border-radius: 2px;
+}
+body .projects-section {
+  padding: 80px 16px 0 16px;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+body .projects-section .section-title {
+  margin-bottom: 24px;
+}
+body .projects-section .section-subtitle {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+body .projects-section .section-desc {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+}
+body .projects-section .projects-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+}
+body .projects-section .projects-container .project-card {
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body .projects-section .projects-container .project-card .project-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: #0d1a1b;
+}
+body .projects-section .projects-container .project-card .project-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+body .projects-section + .projects-section {
+  padding: 30px 16px !important;
+}
+@media (max-width: 1024px) {
+  body .projects-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  body .projects-container .project-card {
+    width: 100% !important;
+  }
+}
+@media (max-width: 920px) {
+  body nav {
+    border-radius: 0;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+  body nav .menu-btn i {
+    display: block;
+  }
+  body nav #click:checked ~ ul {
+    left: 0;
+  }
+  body nav #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  body nav ul {
+    top: 80px;
+    gap: 24px;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    border: none;
+    position: fixed;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    background: linear-gradient(to top, #1d3636, #111b1b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

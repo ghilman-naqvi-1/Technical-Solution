@@ -61,6 +61,21 @@ body nav ul li a {
 body nav ul li a:hover {
   color: #fbbf24;
 }
+body .section-title {
+  margin-bottom: 24px;
+}
+body .section-subtitle {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+body .section-desc {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+}
 body .container {
   margin: 0 auto;
   padding: 0 16px;
@@ -89,21 +104,6 @@ body .projects-section {
   max-width: 1450px;
   margin: 0 auto;
 }
-body .projects-section .section-title {
-  margin-bottom: 24px;
-}
-body .projects-section .section-subtitle {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 24px;
-}
-body .projects-section .section-desc {
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 50px;
-  letter-spacing: 0.05em;
-  line-height: 20px;
-}
 body .projects-section .projects-container {
   display: flex;
   gap: 30px;
@@ -114,6 +114,7 @@ body .projects-section .projects-container {
 body .projects-section .projects-container .project-card {
   width: 33.3333333333%;
   display: flex;
+  position: relative;
   flex-direction: column;
   border-radius: 15px;
   overflow: hidden;
@@ -131,8 +132,27 @@ body .projects-section .projects-container .project-card .project-image img {
   height: 100%;
   transition: transform 0.5s ease;
 }
+body .projects-section .projects-container .project-card .project-info {
+  position: absolute; /* Image container ke andar position karega */
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+}
 body .projects-section + .projects-section {
   padding: 30px 16px !important;
+}
+body .choosing-section {
+  padding: 80px 16px;
+  max-width: 1450px;
+  margin: 0 auto;
 }
 @media (max-width: 1024px) {
   body .projects-container {

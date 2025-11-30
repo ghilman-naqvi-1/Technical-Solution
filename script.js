@@ -20,7 +20,92 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         y: 50,
         opacity: 0,
-        duration: 0.8
+        duration: 0.5
+    });
+
+    // Services section animations
+    gsap.from('#Services .section-subtitle', {
+        scrollTrigger: {
+            trigger: '#Services',
+            start: 'top 80%',
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.5
+    });
+
+    // Services section animations
+    gsap.from('#Services .section-desc', {
+        scrollTrigger: {
+            trigger: '#Services',
+            start: 'top 80%',
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.5
+    });
+
+    // Project cards container
+    const choosingSection = document.querySelector('.choosing-section');
+    if (choosingSection) {
+        // Set initial state
+        gsap.set('.section-subtitle', {opacity: 0, y: 50});
+        
+        // Create timeline for project cards
+        const projectsTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: choosingSection,
+                start: 'top 90%',
+            }
+        });
+
+        // Add each card to the timeline
+        document.querySelectorAll('.section-subtitle').forEach((card, index) => {
+            projectsTl.to(card, {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                clearProps: "all", // Clear properties after animation
+                delay: index * 0.2
+            }, index * 0.2); // Offset each animation
+        });
+    }
+
+    // Project cards container
+    const choosingsSection = document.querySelector('.choosing-section');
+    if (choosingsSection) {
+        // Set initial state
+        gsap.set('.section-desc', {opacity: 0, y: 50});
+        
+        // Create timeline for project cards
+        const projectsTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: choosingsSection,
+                start: 'top 90%',
+            }
+        });
+
+        // Add each card to the timeline
+        document.querySelectorAll('.section-desc').forEach((card, index) => {
+            projectsTl.to(card, {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                clearProps: "all", // Clear properties after animation
+                delay: index * 0.2
+            }, index * 0.2); // Offset each animation
+        });
+    }
+
+    // Services section animations
+    gsap.from('#Choosing .section-desc', {
+        scrollTrigger: {
+            trigger: '#Choosing',
+            start: 'top 80%',
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.5
     });
 
     // Project cards container

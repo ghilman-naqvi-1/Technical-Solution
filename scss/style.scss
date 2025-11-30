@@ -67,6 +67,24 @@ body {
         }
     }
 
+    .section-title {
+        margin-bottom: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .section-desc {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 50px;
+        letter-spacing: 0.05em;
+        line-height: 20px;
+    }
+
     .container {
         margin: 0 auto;
         padding: 0 16px;
@@ -98,24 +116,6 @@ body {
         max-width: 1450px;
         margin: 0 auto;
 
-        .section-title {
-            margin-bottom: 24px;
-        }
-
-        .section-subtitle {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 24px;
-        }
-
-        .section-desc {
-            font-size: 16px;
-            text-align: center;
-            margin-bottom: 50px;
-            letter-spacing: 0.05em;
-            line-height: 20px;
-        }
-
         .projects-container {
             display: flex;
             gap: 30px;
@@ -128,6 +128,7 @@ body {
                 // max-width: 540px;
                 width: calc(100% / 3);
                 display: flex;
+                position: relative;
                 flex-direction: column;
                 border-radius: 15px;
                 overflow: hidden;
@@ -154,6 +155,21 @@ body {
                     // &:hover img {
                     //     transform: scale(1.1);
                     // }
+                }
+
+                .project-info {
+                    position: absolute; /* Image container ke andar position karega */
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    transform: translateY(-50%);
                 }
 
                 // .project-info {
@@ -231,6 +247,12 @@ body {
         + .projects-section {
             padding: 30px 16px !important;
         }
+    }
+
+    .choosing-section {
+        padding: 80px 16px;
+        max-width: 1450px;
+        margin: 0 auto;
     }
 
     @media (max-width: 1024px) {

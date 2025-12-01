@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 html {
@@ -81,6 +81,12 @@ body .container {
   padding: 0 16px;
   padding-top: 80px; /* Add padding for fixed nav */
 }
+body .mb-30 {
+  margin-bottom: 30px !important;
+}
+body .pt-0 {
+  padding-top: 0 !important;
+}
 body .section-title {
   text-align: center;
   font-size: 40px;
@@ -147,12 +153,154 @@ body .projects-section .projects-container .project-card .project-info {
   transform: translateY(-50%);
 }
 body .projects-section + .projects-section {
-  padding: 30px 16px !important;
+  padding-inline: 16px !important;
 }
 body .choosing-section {
   padding: 80px 16px;
   max-width: 1450px;
   margin: 0 auto;
+}
+body .choosing-section .choosing-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+}
+body .choosing-section .choosing-container .choosing-box {
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: white;
+  padding: 30px;
+  height: 250px;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0 0 10px #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body .choosing-section .choosing-container .choosing-box h3 {
+  font-size: 30px;
+  color: black;
+  padding-block: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+body .choosing-section .choosing-container .choosing-box p {
+  color: #6d7685;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+body footer {
+  background-color: #111;
+  padding: 50px 0 0;
+}
+body footer .footer-content {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body footer .footer-content .footer-logo {
+  width: 300px;
+  margin-bottom: 30px;
+}
+body footer .footer-content .footer-logo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+body footer .footer-content .footer-logo p {
+  color: #d1d1d1;
+  font-size: 16px;
+}
+body footer .footer-content .footer-links {
+  margin-bottom: 30px;
+}
+body footer .footer-content .footer-links h4 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+body footer .footer-content .footer-links h4:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #f59e0b;
+}
+body footer .footer-content .footer-links ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+body footer .footer-content .footer-links ul li {
+  margin-bottom: 12px;
+}
+body footer .footer-content .footer-links ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+body footer .footer-content .footer-links ul li a:hover {
+  color: #f59e0b;
+}
+body footer .footer-content .footer-social {
+  margin-bottom: 30px;
+}
+body footer .footer-content .footer-social h4 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+body footer .footer-content .footer-social h4:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #f59e0b;
+}
+body footer .footer-content .footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+body footer .footer-content .footer-social .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+body footer .footer-content .footer-social .social-icons a:hover {
+  background-color: #f59e0b;
+  transform: translateY(-5px);
+}
+body footer .footer-bottom {
+  padding: 20px 0;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #444141;
+}
+body footer .footer-bottom p {
+  color: #d1d1d1;
+  font-size: 14px;
 }
 @media (max-width: 1024px) {
   body .projects-container {
@@ -162,6 +310,15 @@ body .choosing-section {
     flex-direction: column;
   }
   body .projects-container .project-card {
+    width: 100% !important;
+  }
+  body .choosing-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  body .choosing-container .choosing-box {
     width: 100% !important;
   }
 }

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <title>Blog | Technical Solution</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#Services">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="blog.html">Blogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- BLOG SECTION -->
+    <div class="blog-page">
+        <div class="blog-header">
+            <h2 class="section-title">Our Blog</h2>
+            <h1 class="section-subtitle">Latest News & HVAC Tips</h1>
+            <p class="section-desc">
+                Stay updated with the latest trends, tips, and insights about HVAC systems, 
+                air conditioning maintenance, and energy-saving solutions.
+            </p>
+        </div>
+
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="scss/images/central_air_conditioning.jpg" alt="AC Maintenance Tips">
+                    <div class="blog-category">Maintenance</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Feb 5, 2025</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h3>10 Essential AC Maintenance Tips for Summer</h3>
+                    <p>Keep your air conditioning system running efficiently during the hot summer months with these essential maintenance tips that every homeowner should know.</p>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="scss/images/hvac_airduct.jpg" alt="Air Duct Cleaning">
+                    <div class="blog-category">Air Quality</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Jan 28, 2025</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h3>Why Air Duct Cleaning is Important for Your Health</h3>
+                    <p>Discover how regular air duct cleaning can improve indoor air quality, reduce allergies, and create a healthier living environment for your family.</p>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="scss/images/central_heating_system.jpg" alt="Heating System">
+                    <div class="blog-category">Heating</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Jan 20, 2025</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h3>Choosing the Right Heating System for Your Home</h3>
+                    <p>A comprehensive guide to help you choose between furnaces, heat pumps, and boilers based on your home's needs and budget.</p>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="scss/images/evaporative_central_cooling_system.jpg" alt="Energy Saving">
+                    <div class="blog-category">Energy Saving</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Jan 15, 2025</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h3>5 Ways to Reduce Your HVAC Energy Bills</h3>
+                    <p>Learn practical strategies to lower your energy consumption and save money on your monthly utility bills without sacrificing comfort.</p>
+                </div>
+            </article>
+
+            <!-- Blog Post 5 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="scss/images/hvac_packaging_unit.jpg" alt="HVAC Installation">
+                    <div class="blog-category">Installation</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Jan 10, 2025</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h3>Signs You Need a New HVAC System</h3>
+                    <p>Is your HVAC system showing signs of age? Learn the warning signs that indicate it might be time to replace your heating and cooling system.</p>
+                </div>
+            </article>
+
+            <!-- Blog Post 6 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="scss/images/hvac_grilles_and_diffusers.jpg" alt="Ventilation">
+                    <div class="blog-category">Ventilation</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Jan 5, 2025</span>
+                        <span><i class="fas fa-user"></i> Admin</span>
+                    </div>
+                    <h3>The Importance of Proper Ventilation in Buildings</h3>
+                    <p>Understanding how proper ventilation affects air quality, comfort, and health in residential and commercial buildings.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button class="load-more-btn">
+                Load More Articles <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Technical Solution</h3>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#Services">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Technical Solution. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="toast-icon fas fa-info-circle"></i>
+            <span class="toast-message">Coming soon!</span>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <style>
+        /* Toast Notification Styles */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            border: 1px solid #333;
+            border-left: 4px solid #f59e0b;
+            border-radius: 12px;
+            padding: 16px 24px;
+            min-width: 280px;
+            max-width: 350px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            transform: translateX(450px);
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .toast.show {
+            transform: translateX(0);
+        }
+
+        .toast-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toast-icon {
+            font-size: 24px;
+            color: #f59e0b;
+        }
+
+        .toast-message {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .toast-progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            background: linear-gradient(to right, #f59e0b, #fbbf24);
+            transform-origin: left;
+            animation: none;
+        }
+
+        .toast.show .toast-progress {
+            animation: progress 3s linear forwards;
+        }
+
+        @keyframes progress {
+            from { transform: scaleX(1); }
+            to { transform: scaleX(0); }
+        }
+
+        @media (max-width: 480px) {
+            .toast {
+                left: 15px;
+                right: 15px;
+                bottom: 20px;
+                min-width: auto;
+            }
+        }
+    </style>
+
+    <script>
+        // Toast Elements
+        const toast = document.getElementById('toast');
+        const toastIcon = toast.querySelector('.toast-icon');
+        const toastMessage = toast.querySelector('.toast-message');
+
+        // Show Toast Function
+        function showToast(message, icon = 'fa-info-circle') {
+            toastMessage.textContent = message;
+            toastIcon.className = `toast-icon fas ${icon}`;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Load More Button
+        const loadMoreBtn = document.querySelector('.load-more-btn');
+        loadMoreBtn.addEventListener('click', function() {
+            showToast('No more articles to load', 'fa-check-circle');
+            this.innerHTML = 'All Articles Loaded <i class="fas fa-check"></i>';
+            this.disabled = true;
+            this.style.opacity = '0.6';
+            this.style.cursor = 'default';
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

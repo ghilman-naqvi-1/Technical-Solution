@@ -15,11 +15,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <title>Contact Us | Technical Solution</title>
+    <script src="theme.js"></script>
 </head>
 <body>
 
     <!-- NAVBAR (same as index) -->
     <nav>
+        <a class="nav-brand" href="index.html">
+            <img src="scss/images/logo.png" alt="Technical Solutions logo" class="nav-logo">
+            <span class="nav-brand-text">Technical Solutions<span>MECHANICAL &middot; ELECTRICAL &middot; HVAC</span></span>
+        </a>
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -191,7 +196,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 Technical Solution. All Rights Reserved.</p>
+            <p>&copy; 2007&ndash;2026 Technical Solution. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -210,14 +215,14 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-            border: 1px solid #333;
-            border-left: 4px solid #f59e0b;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
             border-radius: 12px;
             padding: 16px 24px;
             min-width: 320px;
             max-width: 400px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
             transform: translateX(450px);
             transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             z-index: 9999;
@@ -244,7 +249,7 @@
         }
 
         .toast-message {
-            color: #fff;
+            color: var(--text);
             font-size: 15px;
             font-weight: 500;
         }
@@ -255,7 +260,7 @@
             left: 0;
             height: 4px;
             width: 100%;
-            background: linear-gradient(to right, #f59e0b, #fbbf24);
+            background: linear-gradient(to right, var(--accent), var(--accent-2));
             transform-origin: left;
             animation: none;
         }
@@ -322,7 +327,7 @@
 
             // Prepare data object
             const data = {
-                access_key: "010f6c51-dfa9-417c-86e6-ad8c8359159e",
+                access_key: "e7a818e5-71b7-4858-860d-c8e0eacaaabf",
                 subject: "New Contact Form - Technical Solution",
                 from_name: "Technical Solution Website",
                 firstName: document.getElementById('firstName').value,
